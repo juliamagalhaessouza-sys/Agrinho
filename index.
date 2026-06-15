@@ -1,0 +1,172 @@
+bom checar as respostas. Sua privacidade e o GeminiAbre em uma nova janela
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo 2026 | Sustentabilidade e IA no Campo</title>
+    <!-- Google Fonts: Pacifico para o título principal e Rajdhani/Inter para o visual moderno e tecnológico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Acessibilidade: Caixa Flutuante no Canto Superior Direito -->
+    <div class="acessibilidade-container" aria-label="Menu de Acessibilidade" role="complementary">
+        <button class="btn-acessibilidade-toggle" id="toggle-acessibilidade" aria-expanded="false" title="Abrir Opções de Acessibilidade">
+            ♿
+        </button>
+        <div class="acessibilidade-painel" id="painel-acessibilidade">
+            <button id="btn-aumentar-fonte" title="Aumentar tamanho do texto">A+ Aumentar Fonte</button>
+            <button id="btn-diminuir-fonte" title="Diminuir tamanho do texto">A- Diminuir Fonte</button>
+            <button id="btn-modo-escuro" title="Alternar modo claro e escuro">🌓 Modo Escuro/Claro</button>
+            <button id="btn-ouvir" title="Ouvir conteúdo principal da página">🔊 Ouvir Texto</button>
+            <button id="btn-parar-ouvir" class="btn-parar" title="Parar leitura de voz" disabled>⏹️ Parar Leitura</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-conteudo">
+                <h1 class="hero-titulo">Equilíbrio entre produção e meio ambiente</h1>
+                <p class="hero-subtitulo">Conectando a inteligência tecnológica à terra de forma sustentável. Conheça a revolução digital que preserva a biodiversidade e otimiza a produtividade do agronegócio brasileiro.</p>
+                <a href="#conteudo-principal" class="btn-moderno">Explorar Inovação</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Layout Principal: Grid de Conteúdo e Formulário -->
+    <div class="layout-principal container">
+        <main id="conteudo-principal" class="conteudo-principal">
+            
+            <!-- Bloco de Introdução com Destaque -->
+            <section class="bloco-introducao">
+                <p class="texto-destaque">
+                    O <strong>Brasil</strong> com certeza é um dos maiores <strong>protagonistas</strong> quando se trata de agro, sendo um dos maiores <strong>exportadores mundiais</strong> de alimentos e derivados.
+                </p>
+                <p class="texto-corpo">
+                    Mas, para o agro funcionar de forma correta, é necessário um <strong>equilíbrio</strong> crucial entre a produção em larga escala e a preservação do meio ambiente, garantindo um futuro muito mais <strong>sustentável</strong> e resiliente pelas próximas gerações.
+                </p>
+            </section>
+
+            <!-- Grid de Cards Informativos com Imagens Embutidas conforme Especificação -->
+            <section class="cards-informativos">
+                <div class="card-moderno">
+                    <div class="imagem"> <img src="Foto1.png" alt="Preservação de matas ciliares e vegetação nativa ao redor de rios e plantações agrícolas de alta tecnologia"> </div>
+                    <div class="card-corpo">
+                        <h3>Proteção de Biomas</h3>
+                        <p>Um bom exemplo prático é a preservação e a recuperação ativa das <strong>matas ao redor de plantações e rios</strong> (matas ciliares), essenciais para evitar a erosão e proteger os recursos hídricos.</p>
+                    </div>
+                </div>
+
+                <div class="card-moderno">
+                    <div class="imagem"> <img src="Foto2.png" alt="Manejo integrado de pragas utilizando drones e defensivos biológicos inovadores no campo"> </div>
+                    <div class="card-corpo">
+                        <h3>Defensivos Naturais</h3>
+                        <p>A constante <strong>diminuição do uso de agrotóxicos tradicionais</strong> e a evolução para substituí-los por <strong>formas mais naturais e preservadas</strong> reduzem o impacto químico no ecossistema e elevam a qualidade do produto final.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seções Expansíveis (Accordion via JavaScript) -->
+            <section class="secao-expansivel">
+                <h2 class="titulo-secao">Tecnologias para a Sustentabilidade</h2>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="acc-1">
+                        <span>Inteligência Artificial na Agricultura de Precisão</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div id="acc-1" class="accordion-content" hidden>
+                        <p>A aplicação de algoritmos avançados e IA permite prever infestações, calcular a quantidade exata de insumos e monitorar a saúde das plantas folha por folha, reduzindo drasticamente o desperdício de recursos preciosos e protegendo o solo.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="acc-2">
+                        <span>Monitoramento e Imagens de Alta Resolução</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div id="acc-2" class="accordion-content" hidden>
+                        <p>O uso combinado de satélites e drones de última geração gera mapas de biomassa que auxiliam no manejo inteligente, assegurando o cumprimento das leis ambientais e identificando áreas necessitadas de regeneração ecológica imediata.</p>
+                        <div class="imagem" style="margin-top: 1rem;"> <img src="Foto3.png" alt="Painel digital mostrando dados de monitoramento via satélite de fazendas sustentáveis"> </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Área de Interação com o Leitor (Comentários) -->
+            <section class="secao-interacao">
+                <h2 class="titulo-secao">Comunidade e Diálogo</h2>
+                <div class="caixa-comentario">
+                    <h3>Deixe sua opinião ou dúvida sobre o Agro Sustentável</h3>
+                    <form id="form-comentario" class="grupo-comentario">
+                        <label for="txt-comentario" class="sr-only">Seu comentário</label>
+                        <textarea id="txt-comentario" placeholder="Escreva aqui sua percepção sobre o equilíbrio entre produção agrícola e preservação ambiental..." required></textarea>
+                        <button type="submit" class="btn-moderno">Enviar Mensagem</button>
+                    </form>
+                    <div class="lista-comentarios" id="lista-comentarios">
+                        <!-- Comentários enviados aparecerão de forma dinâmica aqui -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sidebar Direita com o Formulário de Inscrição -->
+        <aside class="sidebar-inscricao">
+            <div class="card-formulario">
+                <h2>Venha conhecer melhor como a IA pode ser uma aliada do Campo.</h2>
+                <p>Inscreva-se no nosso seminário on-line gratuito e conecte-se ao futuro do agronegócio.</p>
+                
+                <form id="form-seminario">
+                    <div class="campo-grupo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Ex: Toledo" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" placeholder="Ex: Paraná" required>
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" name="pais" placeholder="Ex: Brasil" required>
+                    </div>
+                    <button type="submit" class="btn-moderno btn-bloco">Garantir Minha Vaga</button>
+                </form>
+                <div id="mensagem-sucesso" class="mensagem-sucesso" hidden>Inscrição realizada com sucesso! Prepare-se para o futuro.</div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="rodape-moderno">
+        <div class="container rodape-conteudo">
+            <div class="rodape-frase">
+                <p><strong>AgroFuturo 2026 ° Conectando a inteligência tecnologia à terra de forma sustentável</strong></p>
+            </div>
+            <div class="rodape-referencias">
+                <span>Referências utilizadas:</span>
+                <ul>
+                    <li><a href="https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/" target="_blank" rel="noopener noreferrer">BemAgro - Benefícios da IA no Campo</a></li>
+                    <li><a href="https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html" target="_blank" rel="noopener noreferrer">Agrolink - O Campo Conectado e a IA</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<
